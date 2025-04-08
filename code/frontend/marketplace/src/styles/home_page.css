@@ -1,0 +1,172 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0c0e17;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #00a8e8;
+}
+
+ul {
+    list-style: none;
+}
+
+.home-page {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    background-color: rgba(12, 14, 23, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: #00a8e8;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 2rem;
+    height: 2rem;
+    background-color: #001f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+.logo-text {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #00a8e8;
+}
+
+.logo-text span {
+    display: block;
+    font-size: 0.6rem;
+    color: #8aa0bd;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.main-nav a {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.main-nav a.active {
+    color: #ffffff;
+}
+
+.main-nav a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #00a8e8;
+}
+
+.header-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.header-actions button, .profile-btn {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.header-actions button:hover, .profile-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.search-icon::before {
+    content: '🔍';
+    font-size: 1rem;
+}
+
+.notification-icon::before {
+    content: '🔔';
+    font-size: 1rem;
+}
+
+.profile-icon {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Hero Background - Exactly matching your requirements */
+.hero-background {
+    width: 1465px;
+    height: 613px;
+    flex-shrink: 0;
+    border: 0px solid #BDC1CA;
+    background: url('../assets/Image 2.png') lightgray 1465px -98px / -100% 131.974% no-repeat;
+    margin: 0 auto; /* Center the background */
+}
+
+/* Content placeholder for future sections */
+.content-placeholder {
+    min-height: 200px;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 1465px) {
+    .hero-background {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+}
